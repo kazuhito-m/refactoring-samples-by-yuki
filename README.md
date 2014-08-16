@@ -11,6 +11,7 @@ Refactoring Samples by Hiroshi Yuki
 
 ## Latest integration
 
++ master : [![Build Status](https://secure.travis-ci.org/k-miura-biz/refactoring-samples-by-yuki.png)](http://travis-ci.org/k-miura-biz/refactoring-samples-by-yuki)
 
 
 ## Author
