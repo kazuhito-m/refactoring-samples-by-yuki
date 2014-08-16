@@ -26,4 +26,7 @@ public class Database {
     public Properties getProperties() {
         return _properties;
     }
+	public Enumeration<?> keys() {
+		return _properties.propertyNames();
+	}
 }
