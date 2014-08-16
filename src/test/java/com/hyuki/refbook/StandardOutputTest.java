@@ -1,11 +1,16 @@
 package com.hyuki.refbook;
 
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
+
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 public class StandardOutputTest {
 	private PrintStream _savedOut;
@@ -36,5 +41,10 @@ public class StandardOutputTest {
 		}
 		out.flush();
 		return expected.toString();
+	}
+
+	@Test
+	public void dummy() {
+		assertThat(_savedOut, is(notNullValue()));
 	}
 }
