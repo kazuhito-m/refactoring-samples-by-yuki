@@ -9,7 +9,7 @@ public class AddressFile {
         _database = new Database(filename);
     }
     public Enumeration<?> names() {
-        return _database.getProperties().propertyNames();
+        return _database.keys();
     }
 	public void set(String key, String value) {
 		_database.set(key, value);
