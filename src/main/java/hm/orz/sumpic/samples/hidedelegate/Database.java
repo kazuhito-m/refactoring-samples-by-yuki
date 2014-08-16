@@ -23,9 +23,6 @@ public class Database {
     public void update() throws IOException {
         _properties.store(new FileOutputStream(_filename), "");
     }
-    public Properties getProperties() {
-        return _properties;
-    }
 	public Enumeration<?> keys() {
 		return _properties.propertyNames();
 	}
