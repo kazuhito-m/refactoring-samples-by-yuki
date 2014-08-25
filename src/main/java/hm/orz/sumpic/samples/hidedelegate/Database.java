@@ -23,7 +23,9 @@ public class Database {
     public void update() throws IOException {
         _properties.store(new FileOutputStream(_filename), "");
     }
-    public Properties getProperties() {
-        return _properties;
-    }
+    
+    //委譲メソッド群
+	public Enumeration<?> keys() {
+		return _properties.propertyNames();
+	}
 }
