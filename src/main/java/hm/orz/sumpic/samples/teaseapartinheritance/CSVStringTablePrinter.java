@@ -2,9 +2,10 @@ package hm.orz.sumpic.samples.teaseapartinheritance;
 
 import java.io.*;
 
-public class CSVStringTablePrinter extends CSVStringReader {
+public class CSVStringTablePrinter extends CSVPrinter {
+	
     public CSVStringTablePrinter(String string) {
-        super(string);
+        super(new CSVStringReader(string));
     }
 
     public void print() throws IOException {
@@ -21,4 +22,10 @@ public class CSVStringTablePrinter extends CSVStringReader {
         }
         System.out.println("</table>");
     }
+
+	@Override
+	public String[] readCSV() throws IOException {
+		return _csvReader.readCSV();
+	}
+	
 }
