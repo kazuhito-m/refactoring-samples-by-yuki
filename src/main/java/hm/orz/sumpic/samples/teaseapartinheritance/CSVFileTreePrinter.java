@@ -1,7 +1,6 @@
 package hm.orz.sumpic.samples.teaseapartinheritance;
 
 import java.io.*;
-import java.util.*;
 
 public class CSVFileTreePrinter extends CSVFileReader {
     public CSVFileTreePrinter(String filename) throws IOException {
@@ -9,11 +8,8 @@ public class CSVFileTreePrinter extends CSVFileReader {
     }
     public void print() throws IOException {
         String[] prevItem = new String[0];
-        for (int row = 0; true; row++) {
-            String[] item = readCSV();
-            if (item == null) {
-                break;
-            }
+        String[] item;
+        while ((item = readCSV()) != null) {
             boolean justprint = false;
             for (int column = 0; column < item.length; column++) {
                 if (justprint) {
