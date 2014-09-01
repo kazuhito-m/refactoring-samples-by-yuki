@@ -1,0 +1,20 @@
+1.はじめてのGit
+https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargazers
+
+2.開発例
+
+・コマンド
+
+元に戻す： 
+マージ : 
+
+
+・マージ
+
+・歴史改変
+
+
+
+
+
+3.git svn2f912198ea9a0f601d708494c8e0c79037b8adbc
