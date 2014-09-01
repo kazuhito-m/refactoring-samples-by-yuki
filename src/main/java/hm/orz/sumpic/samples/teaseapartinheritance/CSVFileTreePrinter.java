@@ -2,9 +2,9 @@ package hm.orz.sumpic.samples.teaseapartinheritance;
 
 import java.io.*;
 
-public class CSVFileTreePrinter extends CSVFileReader {
+public class CSVFileTreePrinter extends CSVPrinter {
     public CSVFileTreePrinter(String filename) throws IOException {
-        super(filename);
+    	super(new CSVFileReader(filename));
     }
     public void print() throws IOException {
         String[] prevItem = new String[0];
@@ -30,4 +30,8 @@ public class CSVFileTreePrinter extends CSVFileReader {
         }
         System.out.println(s);
     }
+	@Override
+	public String[] readCSV() throws IOException {
+		return _csvReader.readCSV();
+	}
 }
