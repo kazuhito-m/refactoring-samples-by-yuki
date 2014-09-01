@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
     	String csvFile = args[0];
-        new CSVStringTablePrinter(SAMPLE_CSV_STRING).print();
+        new CSVTablePrinter(new CSVStringReader(SAMPLE_CSV_STRING)).print();
         new CSVFileTreePrinter(csvFile).print();
     }
 
