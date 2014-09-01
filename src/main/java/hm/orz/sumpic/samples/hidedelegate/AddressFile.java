@@ -1,5 +1,4 @@
 package hm.orz.sumpic.samples.hidedelegate;
-
 import java.io.IOException;
 import java.util.*;
 
@@ -11,7 +10,7 @@ public class AddressFile {
     public Enumeration<?> names() {
         return _database.keys();
     }
-    
+
     // 委譲メソッド群。
 	public void set(String key, String value) {
 		_database.set(key, value);
