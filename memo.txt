@@ -1,4 +1,4 @@
-■カンペ
+﻿■カンペ
 
 1.はじめてのGit
 https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargazers
@@ -9,6 +9,7 @@ https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargaze
 
 	最新のコミットまで戻す： git reset --hard HEAD
 	マージ :  git merge "branchmei"
+	マージツール : git mergetool
 	歴史改変: git rebase -i
 	マージツール :
 
