@@ -14,14 +14,20 @@
 	</dependencies>
 	<build>
 		<plugins>
+			<!-- プロジェクト依存対策(2系でも少し古いプラグインを使う。) -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>2.5.1</version>
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
 			</plugin>
 		</plugins>
 	</build>

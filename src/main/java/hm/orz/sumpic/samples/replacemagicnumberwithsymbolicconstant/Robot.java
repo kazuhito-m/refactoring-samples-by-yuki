@@ -1,4 +1,16 @@
 public class Robot {
+
+//    public static final int COMMAND_WALK = 0;
+//    public static final int COMMAND_STOP = 1;
+//    public static final int COMMAND_JUMP = 2;
+
+//    public enum Command {
+//        WALK,
+//        STOP,
+//        JUMP,
+//    };
+
+
     private final String _name;
     public Robot(String name) {
         _name = name;
