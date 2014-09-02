@@ -1,7 +1,7 @@
 ﻿■カンペ
 
 1.はじめてのGit
-https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargazers
+	https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargazers
 
 2.開発例
 
@@ -11,6 +11,7 @@ https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargaze
 	マージ :  git merge "branchmei"
 	マージツール : git mergetool
 	歴史改変: git rebase -i HEAD~3
+	歴史末梢: git reset --hard HEAD~2
 
 ・シナリオ
 
@@ -32,5 +33,6 @@ https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargaze
 
 ・コマンド
 
-
-
+	git svn clone -s "URL"
+	git svn dcommit
+	git svn rebase
