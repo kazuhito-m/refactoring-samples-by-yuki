@@ -10,8 +10,7 @@ https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargaze
 	最新のコミットまで戻す： git reset --hard HEAD
 	マージ :  git merge "branchmei"
 	歴史改変: git rebase -i
-
-・マージ
+	マージツール :
 
 ・歴史改変
 
