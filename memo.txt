@@ -7,6 +7,7 @@
 
 ・コマンド
 
+	コミット履歴をワンライナーで見る : git log --oneline
 	最新のコミットまで戻す： git reset --hard HEAD
 	マージ :  git merge "branchmei"
 	マージツール : git mergetool
@@ -36,3 +37,21 @@
 	git svn clone -s "URL"
 	git svn dcommit
 	git svn rebase
+
+
+※今後どうする？
+
+いろいろ考えた結果…「お金勿体無い！」ってことで、サイト見たらいんじゃね？
+
+    http://d.hatena.ne.jp/toromoti/20140220/1392889776
+
+の二つ程度。
+プラス
+
+    https://github.com/Shinpeim/introduction-to-git
+    http://www.slideshare.net/matsukaz/git-28304397
+    http://git-scm.com/book/ja
+
+とかかなぁ？ (さるでもわかる…がプロキシに封じられているのが痛い)
+
+要は"怖くない"が分ってくれたら、それで満たしている気がしている。
