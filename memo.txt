@@ -17,5 +17,9 @@ https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargaze
 ・歴史改変
 
 
+3.git-svnでチェックアウト＆コミット＆svnプッシュデモ
 
+・コマンド
+
+	
 
