@@ -9,10 +9,22 @@ https://speakerdeck.com/tanakahisateru/hazimetefalsegit-number-gitkyoto#stargaze
 
 	最新のコミットまで戻す： git reset --hard HEAD
 	マージ :  git merge "branchmei"
-	歴史改変: git rebase -i
-	マージツール :
+	歴史改変: git rebase -i HEAD~3
 
-・歴史改変
+・シナリオ
+
+	1.コンパイルエラー直す
+	2.リファクタリング用ブランチ切る
+	3.リファクタリングする(リズムと単位を見せる)
+	4.コミットをまとめる。
+	5.masterに戻ってファイルを足す。(別の章のソース(コンパイルエラーあり)とか)
+	6.mergeする(ここでは問題ない)
+	7.ブランチを削除する
+	8.ブランチを追加する。(memo.txt改変用のなんかわかりやすい名前)
+	9.別ディレクトリに置いたmasterを変更(memo.txtとかを)
+	10.ブランチ側からマージをしようとしたときにコンフリクトする
+	11.git mergetoolで競合を整える。
+	12.何個かのcommitを取り消す
 
 
 
