@@ -1,3 +1,5 @@
+package hm.orz.sumpic.samples.replacemagicnumberwithsymbolicconstant;
+
 public class Main {
     public static void main(String[] args) {
         Robot robot = new Robot("Andrew");

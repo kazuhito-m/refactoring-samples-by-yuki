@@ -1,6 +1,10 @@
-import static org.junit.Assert.assertEquals;
+package hm.orz.sumpic.samples.replacemagicnumberwithsymbolicconstant;
+
+import static org.junit.Assert.*;
 import junit.framework.JUnit4TestAdapter;
-import org.junit.*;
+
+import org.junit.Test;
+
 import com.hyuki.refbook.StandardOutputTest;
 
 public class MainTest extends StandardOutputTest {

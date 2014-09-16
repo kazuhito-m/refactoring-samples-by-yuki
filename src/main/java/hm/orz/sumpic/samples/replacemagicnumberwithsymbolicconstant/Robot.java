@@ -1,3 +1,5 @@
+package hm.orz.sumpic.samples.replacemagicnumberwithsymbolicconstant;
+
 public class Robot {
 
 //    public static final int COMMAND_WALK = 0;
