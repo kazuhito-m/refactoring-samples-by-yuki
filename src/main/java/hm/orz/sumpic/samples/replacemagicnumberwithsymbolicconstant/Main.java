@@ -1,10 +1,13 @@
 package hm.orz.sumpic.samples.replacemagicnumberwithsymbolicconstant;
 
+import static hm.orz.sumpic.samples.replacemagicnumberwithsymbolicconstant.Robot.Command.*;
+
 public class Main {
     public static void main(String[] args) {
         Robot robot = new Robot("Andrew");
-        robot.order(0); // walk
-        robot.order(1); // stop
-        robot.order(2); // jump
+        robot.order(WALK); // walk
+        robot.order(STOP); // stop
+        robot.order(JUMP); // jump
+
     }
 }
