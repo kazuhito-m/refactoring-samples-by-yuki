@@ -8,12 +8,12 @@
 
 ### コマンド
 
-コミット履歴をワンライナーで見る : git log --oneline
-最新のコミットまで戻す： git reset --hard HEAD
-マージ :  git merge "branchmei"
-マージツール : git mergetool
-歴史改変: git rebase -i HEAD~3
-歴史末梢: git reset --hard HEAD~2
++ コミット履歴をワンライナーで見る : git log --oneline
++ 最新のコミットまで戻す： git reset --hard HEAD
++ マージ :  git merge "branchmei"
++ マージツール : git mergetool
++ 歴史改変: git rebase -i HEAD~3
++ 歴史末梢: git reset --hard HEAD~2
 
 ### シナリオ
 
@@ -80,8 +80,11 @@
 ### 何やる？
 
   ☆5人- 1.Wicketの勉強
+
   4人- 4.テスト
+
   3人- 2.モデリングの勉強(クラス設計)
+
   0. - 3.ドメイン駆動設計
 
 ### 宿題
