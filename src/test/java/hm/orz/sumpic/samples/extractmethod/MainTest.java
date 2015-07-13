@@ -4,6 +4,10 @@ import com.hyuki.refbook.StandardOutputTest;
 import junit.framework.JUnit4TestAdapter;
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+import static org.hamcrest.core.Is.*;
+
+
 import static org.junit.Assert.assertEquals;
 
 public class MainTest extends StandardOutputTest {
@@ -18,7 +22,7 @@ public class MainTest extends StandardOutputTest {
                 "+-----+");
         String actual = getActualOutput();
 
-        assertEquals(expected, actual);
+        assertThat(expected, is(actual));
     }
 
     @Test
@@ -34,7 +38,7 @@ public class MainTest extends StandardOutputTest {
                 "+-------------+");
         String actual = getActualOutput();
 
-        assertEquals(expected, actual);
+        assertThat(expected, is(actual));
     }
 
     @Test
@@ -49,7 +53,7 @@ public class MainTest extends StandardOutputTest {
                 "++");
         String actual = getActualOutput();
 
-        assertEquals(expected, actual);
+        assertThat(expected, is(actual));
     }
 
     public static junit.framework.Test suite() {
