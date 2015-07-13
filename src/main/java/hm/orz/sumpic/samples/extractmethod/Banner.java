@@ -5,6 +5,7 @@ public class Banner {
     public Banner(String content) {
         _content = content;
     }
+
     public void print(int times) {
         // Prints border.
         System.out.print("+");
