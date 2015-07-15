@@ -11,9 +11,7 @@ public class Book {
         _title = title;
         _isbn = isbn;
         _price = price;
-        _author = new Author();
-        _author.setName(authorName);
-        _author.setMail(authorMail);
+        _author = new Author(authorName, authorMail);
     }
 
     public String getTitle() {
