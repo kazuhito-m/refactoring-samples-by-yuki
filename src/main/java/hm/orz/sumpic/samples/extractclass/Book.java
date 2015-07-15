@@ -25,6 +25,14 @@ public class Book {
     public String getPrice() {
         return _price;
     }
+    
+    public String getAuthorName() {
+        return _author.getName();
+    }
+
+    public String getAuthorMail() {
+        return _author.getMail();
+    }
 
     public String toXml() {
         String author =
