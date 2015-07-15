@@ -4,15 +4,16 @@ public class Book {
     private String _title;
     private String _isbn;
     private String _price;
-    private String _authorName;
-    private String _authorMail;
+
+    private Author _author;
 
     public Book(String title, String isbn, String price, String authorName, String authorMail) {
         _title = title;
         _isbn = isbn;
         _price = price;
-        _authorName = authorName;
-        _authorMail = authorMail;
+        _author = new Author();
+        _author.setName(authorName);
+        _author.setMail(authorMail);
     }
 
     public String getTitle() {
@@ -27,25 +28,9 @@ public class Book {
         return _price;
     }
 
-    public String getAuthorName() {
-        return _authorName;
-    }
-
-    public String getAuthorMail() {
-        return _authorMail;
-    }
-
-    public void setAuthorName(String name) {
-        _authorName = name;
-    }
-
-    public void setAuthorMail(String mail) {
-        _authorMail = mail;
-    }
-
     public String toXml() {
         String author =
-                tag("author", tag("name", _authorName) + tag("mail", _authorMail));
+                tag("author", tag("name", _author.getName()) + tag("mail", _author.getMail()));
         String book =
                 tag("book", tag("title", _title) + tag("isbn", _isbn) + tag("price", _price) + author);
         return book;
