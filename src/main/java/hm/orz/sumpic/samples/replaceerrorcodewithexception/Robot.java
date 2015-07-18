@@ -9,6 +9,7 @@ public class Robot {
     public Robot(String name) {
         _name = name;
     }
+
     public void execute(String commandSequence) {
         StringTokenizer tokenizer = new StringTokenizer(commandSequence);
         while (tokenizer.hasMoreTokens()) {
@@ -19,6 +20,7 @@ public class Robot {
             }
         }
     }
+
     public boolean executeCommand(String commandString) {
         Command command = Command.parseCommand(commandString);
         if (command == null) {
@@ -26,6 +28,7 @@ public class Robot {
         }
         return executeCommand(command);
     }
+
     public boolean executeCommand(Command command) {
         if (command == Command.FORWARD) {
             _position.relativeMove(_direction._x, _direction._y);
