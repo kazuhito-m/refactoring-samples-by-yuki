@@ -9,6 +9,7 @@ Refactoring Samples by Hiroshi Yuki
 
 また、「Maven2系の模範的なpom.xml設定」のサンプルの役目（俺の中で）も担います。
 
+
 ## Latest integration
 
 + master : [![Build Status](https://secure.travis-ci.org/kazuhito-m/refactoring-samples-by-yuki.png)](http://travis-ci.org/kazuhito-m/refactoring-samples-by-yuki)
