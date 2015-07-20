@@ -12,24 +12,22 @@ public class Robot {
 
     public void execute(String commandSequence) {
         StringTokenizer tokenizer = new StringTokenizer(commandSequence);
-        while (tokenizer.hasMoreTokens()) {
-            String token = tokenizer.nextToken();
-            if (!executeCommand(token)) {
-                System.out.println("Invalid command: " + token);
-                break;
+        try {
+            while (tokenizer.hasMoreTokens()) {
+                String token = tokenizer.nextToken();
+                executeCommand(token);
             }
+        } catch (InvalidCommandException e) {
+            System.out.println("Invalid command: " + e.getMessage());
         }
     }
 
-    public boolean executeCommand(String commandString) {
+    public void executeCommand(String commandString) throws InvalidCommandException {
         Command command = Command.parseCommand(commandString);
-        if (command == null) {
-            return false;
-        }
-        return executeCommand(command);
+        executeCommand(command);
     }
 
-    public boolean executeCommand(Command command) {
+    public void executeCommand(Command command) throws InvalidCommandException{
         if (command == Command.FORWARD) {
             _position.relativeMove(_direction._x, _direction._y);
         } else if (command == Command.BACKWARD) {
@@ -39,9 +37,8 @@ public class Robot {
         } else if (command == Command.TURN_LEFT) {
             _direction.setDirection(-_direction._y, _direction._x);
         } else {
-            return false;
+            throw new InvalidCommandException();
         }
-        return true;
     }
     public String toString() {
         return "[ Robot: " + _name + " "

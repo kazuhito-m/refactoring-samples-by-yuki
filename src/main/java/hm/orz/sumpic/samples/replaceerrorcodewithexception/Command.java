@@ -21,9 +21,9 @@ public class Command {
     public String getName() {
         return _name;
     }
-    public static Command parseCommand(String name) {
+    public static Command parseCommand(String name) throws InvalidCommandException {
         if (!_commandNameMap.containsKey(name)) {
-            return null;
+            throw new InvalidCommandException(name);
         }
         return _commandNameMap.get(name);
     }
