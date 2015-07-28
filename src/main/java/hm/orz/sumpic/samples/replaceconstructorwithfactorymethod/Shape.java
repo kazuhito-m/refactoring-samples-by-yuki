@@ -11,7 +11,7 @@ public class Shape {
     private final int _endx;
     private final int _endy;
 
-    public Shape(int typecode, int startx, int starty, int endx, int endy) {
+    private Shape(int typecode, int startx, int starty, int endx, int endy) {
         _typecode = typecode;
         _startx = startx;
         _endx = endx;
@@ -25,37 +25,37 @@ public class Shape {
 
     public String getName() {
         switch (_typecode) {
-        case TYPECODE_LINE:
-            return "LINE";
-        case TYPECODE_RECTANGLE:
-            return "RECTANGLE";
-        case TYPECODE_OVAL:
-            return "OVAL";
-        default:
-            return null;
+            case TYPECODE_LINE:
+                return "LINE";
+            case TYPECODE_RECTANGLE:
+                return "RECTANGLE";
+            case TYPECODE_OVAL:
+                return "OVAL";
+            default:
+                return null;
         }
     }
 
     public String toString() {
         return "[ "
-            + getName() + ", "
-            + "(" + _startx + ", " + _starty + ")-"
-            + "(" + _endx + ", " + _endy + ") ]";
+                + getName() + ", "
+                + "(" + _startx + ", " + _starty + ")-"
+                + "(" + _endx + ", " + _endy + ") ]";
     }
 
     public void draw() {
         switch (_typecode) {
-        case TYPECODE_LINE:
-            drawLine();
-            break;
-        case TYPECODE_RECTANGLE:
-            drawRectangle();
-            break;
-        case TYPECODE_OVAL:
-            drawOval();
-            break;
-        default:
-            ;
+            case TYPECODE_LINE:
+                drawLine();
+                break;
+            case TYPECODE_RECTANGLE:
+                drawRectangle();
+                break;
+            case TYPECODE_OVAL:
+                drawOval();
+                break;
+            default:
+                ;
         }
     }
 
@@ -63,12 +63,21 @@ public class Shape {
         System.out.println("drawLine: " + this.toString());
         // ...
     }
+
     private void drawRectangle() {
         System.out.println("drawRectangle: " + this.toString());
         // ...
     }
+
     private void drawOval() {
         System.out.println("drawOval: " + this.toString());
         // ...
+    }
+
+    /**
+     * ファクトリメソッド。
+     */
+    public static Shape create(int typecode, int startx, int starty, int endx, int endy) {
+        return new Shape(typecode,startx,starty,endx,endy);
     }
 }
