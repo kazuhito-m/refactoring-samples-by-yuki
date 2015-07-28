@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e274367a-c85f-42d5-b0a5-55795a9d3238" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/Shape.java" afterPath="$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/Shape.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeOval.java" afterPath="$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeOval.java" />
     </list>
     <ignored path="refactoring-samples-by-yuki.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,6 +33,7 @@
           <file leaf-file-name="Shape.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/Shape.java">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.041990668" vertical-offset="0" max-vertical-offset="643">
                   <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
                   <folding />
@@ -44,6 +46,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="243">
                   <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+=======
+                <state vertical-scroll-proportion="0.86893207" vertical-offset="164" max-vertical-offset="576">
+                  <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
                   <folding />
                 </state>
               </provider>
@@ -68,9 +74,20 @@
           <file leaf-file-name="ShapeOval.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeOval.java">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.251944" vertical-offset="0" max-vertical-offset="643">
                   <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
                   <folding />
+=======
+                <state vertical-scroll-proportion="0.46588236" vertical-offset="0" max-vertical-offset="425">
+                  <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+                  <folding>
+                    <element signature="e#312#313#0" expanded="true" />
+                    <element signature="e#378#379#0" expanded="true" />
+                    <element signature="e#423#424#0" expanded="true" />
+                    <element signature="e#452#453#0" expanded="true" />
+                  </folding>
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
                 </state>
               </provider>
             </entry>
@@ -78,7 +95,11 @@
           <file leaf-file-name="ShapeRectangle.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeRectangle.java">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="252">
+=======
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
                   <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding>
                     <element signature="e#322#323#0" expanded="true" />
@@ -92,7 +113,11 @@
           <file leaf-file-name="ShapeLine.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeLine.java">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="252">
+=======
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
                   <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
                   <folding>
                     <element signature="e#312#313#0" expanded="true" />
@@ -129,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeOval.java" />
         <option value="$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/Shape.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeOval.java" />
       </list>
     </option>
   </component>
@@ -1168,6 +1194,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1176,8 +1203,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33870968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+=======
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1597,10 +1627,42 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
     <entry file="file://$PROJECT_DIR$/src/test/java/hm/orz/sumpic/samples/replacemagicnumberwithsymbolicconstant/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
         </state>
       </provider>
     </entry>
@@ -1616,7 +1678,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="243">
+=======
+        <state vertical-scroll-proportion="0.34951457" vertical-offset="0" max-vertical-offset="412">
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
@@ -1624,9 +1690,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.041990668" vertical-offset="0" max-vertical-offset="643">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+=======
+        <state vertical-scroll-proportion="0.86893207" vertical-offset="164" max-vertical-offset="576">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+>>>>>>> 5790c4bc47752ed51223f9aeca9f481cbb770211
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hm/orz/sumpic/samples/replaceconstructorwithfactorymethod/ShapeOval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46588236" vertical-offset="0" max-vertical-offset="425">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
