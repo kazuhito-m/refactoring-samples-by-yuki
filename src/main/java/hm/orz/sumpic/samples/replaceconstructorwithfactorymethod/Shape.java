@@ -2,10 +2,6 @@ package hm.orz.sumpic.samples.replaceconstructorwithfactorymethod;
 
 public abstract class Shape {
 
-    public static final int TYPECODE_LINE = 0;
-    public static final int TYPECODE_RECTANGLE = 1;
-    public static final int TYPECODE_OVAL = 2;
-
     private final int _startx;
     private final int _starty;
     private final int _endx;
