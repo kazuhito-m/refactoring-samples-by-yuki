@@ -13,7 +13,7 @@ public class Suggest {
     public Suggest(String value , String description) {
         this.value= value;
         this.description = defaultString(description);
-        if (description.isEmpty()) {
+        if (this.description.isEmpty()) {
             this.displayText = this.value;
         } else {
             this.displayText = String.format("%s (%s)" , this.value,this.description);

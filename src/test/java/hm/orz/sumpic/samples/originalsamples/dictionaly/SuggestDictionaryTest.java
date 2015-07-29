@@ -12,12 +12,14 @@ public class SuggestDictionaryTest {
 
     @Test
     public void 読めたかどうか() {
+        // act
         SuggestDictionary actual = SuggestDictionary.loadFor(null);
+        //assert
         assertThat(actual.size(), is(8));
-
-        actual.stream().forEach(i -> System.out.println(i.toString()));
-
+        // あとはてきとうに抜き打ち
+        assertThat(actual.get(0).toString(), is("AbC"));
+        assertThat(actual.get(3).toString(), is("abc (def)"));
+        assertThat(actual.get(7).toString(), is("日本語とかね"));
     }
-
 
 }
