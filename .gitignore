@@ -2,3 +2,6 @@
 /.*
 !/.gitignore
 !/.travis.yml
+*.ipr
+*.iml
+*.iws
