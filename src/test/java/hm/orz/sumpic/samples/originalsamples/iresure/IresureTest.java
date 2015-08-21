@@ -3,6 +3,9 @@ package hm.orz.sumpic.samples.originalsamples.iresure;
 import hm.orz.sumpic.samples.originalsamples.dictionaly.SuggestDictionary;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -13,14 +16,16 @@ public class IresureTest {
 
     @Test
     public void 子クラスのリストを親クラスの変数でうけても上手く行く() {
-        // act
-        SuggestDictionary actual = SuggestDictionary.loadFor(null);
-        //assert
-        assertThat(actual.size(), is(8));
-        // あとはてきとうに抜き打ち
-        assertThat(actual.get(0).toString(), is("AbC"));
-        assertThat(actual.get(3).toString(), is("abc (def)"));
-        assertThat(actual.get(7).toString(), is("日本語とかね"));
+        List<Inherit> list = new ArrayList<>();
+
+        Inherit item = Inherit.create("一軒目" ,1 ,"一見目のデータです。");
+        list.add(item);
+        item = Inherit.create("に軒目" ,2 ,"２見目のデータです。");
+        list.add(item);
+        item = Inherit.create("に軒目" ,3 ,"３見目のデータです。");
+        list.add(item);
+
+
     }
 
 }
