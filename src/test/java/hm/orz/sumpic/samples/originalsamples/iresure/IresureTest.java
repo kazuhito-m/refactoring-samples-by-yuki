@@ -45,4 +45,25 @@ public class IresureTest {
 
     }
 
+
+    @Test
+    public void 親クラスのリストを子クラスの変数でうけるとうまくいかないのか() {
+        // 子クラスのリスト作成。
+        List<Base> list = new ArrayList<>();
+
+        Inherit item = Inherit.create("一軒目", 1, "一見目のデータです。");
+        list.add((Base) item);
+        item = Inherit.create("二軒目", 2, "２見目のデータです。");
+        list.add((Base) item);
+        item = Inherit.create("三軒目", 3, "３見目のデータです。");
+        list.add((Base) item);
+
+        // 本来のクラス型に入れる(ダウンキャスト)は可能
+        Inherit item1 = (Inherit) list.get(0);
+        Inherit item2 = (Inherit) list.get(1);
+        Inherit item3 = (Inherit) list.get(2);
+
+
+    }
+
 }
