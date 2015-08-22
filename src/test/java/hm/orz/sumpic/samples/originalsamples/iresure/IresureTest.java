@@ -62,7 +62,14 @@ public class IresureTest {
         Inherit item1 = (Inherit) list.get(0);
         Inherit item2 = (Inherit) list.get(1);
         Inherit item3 = (Inherit) list.get(2);
-
+        // 親クラス型にキャスト
+        Base base1 = item1;
+        Base base2 = item2;
+        Base base3 = item3;
+        // 無論、メソッドは子のもの・
+        assertThat(base1.getType(), is(100));
+        assertThat(base2.getType(), is(200));
+        assertThat(base3.getType(), is(300));
 
     }
 
