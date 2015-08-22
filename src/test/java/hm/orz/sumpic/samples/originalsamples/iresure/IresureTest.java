@@ -20,11 +20,21 @@ public class IresureTest {
 
         Inherit item = Inherit.create("一軒目" ,1 ,"一見目のデータです。");
         list.add(item);
-        item = Inherit.create("に軒目" ,2 ,"２見目のデータです。");
+        item = Inherit.create("二軒目" ,2 ,"２見目のデータです。");
         list.add(item);
-        item = Inherit.create("に軒目" ,3 ,"３見目のデータです。");
+        item = Inherit.create("三軒目" ,3 ,"３見目のデータです。");
         list.add(item);
 
+        Base item1 = list.get(0);
+        Base item2 = list.get(1);
+        Base item3 = list.get(2);
+
+        // 取得した変数の型は親でも、メソッドは子…のはず！
+        assertThat(item1.getType() , is(100));
+        assertThat(item2.getType() , is(200));
+        assertThat(item3.getType() , is(300));
+
+        
 
     }
 

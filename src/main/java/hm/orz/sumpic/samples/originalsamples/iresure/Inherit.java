@@ -15,8 +15,18 @@ public class Inherit extends Base {
         return description;
     }
 
+    @Override
+    public int getType() {
+        return super.getType() * 100;
+    }
+
+
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    private Inherit() {
+        super();
     }
 
     public static Inherit create(String name , int type , String description) {

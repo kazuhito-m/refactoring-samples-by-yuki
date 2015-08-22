@@ -26,12 +26,12 @@ public class Base {
         this.type = type;
     }
 
-    private Base() {
+    protected Base() {
 
     }
 
 
-    public static create(String name , int type) {
+    public static Base create(String name , int type) {
         Base b = new Base();
         b.setName(name);
         b.setType(type);
