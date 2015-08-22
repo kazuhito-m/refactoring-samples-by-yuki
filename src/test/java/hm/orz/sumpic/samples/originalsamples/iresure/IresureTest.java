@@ -1,6 +1,5 @@
 package hm.orz.sumpic.samples.originalsamples.iresure;
 
-import hm.orz.sumpic.samples.originalsamples.dictionaly.SuggestDictionary;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -16,13 +15,14 @@ public class IresureTest {
 
     @Test
     public void 子クラスのリストを親クラスの変数でうけても上手く行く() {
+        // 子クラスのリスト作成。
         List<Inherit> list = new ArrayList<>();
 
-        Inherit item = Inherit.create("一軒目" ,1 ,"一見目のデータです。");
+        Inherit item = Inherit.create("一軒目", 1, "一見目のデータです。");
         list.add(item);
-        item = Inherit.create("二軒目" ,2 ,"２見目のデータです。");
+        item = Inherit.create("二軒目", 2, "２見目のデータです。");
         list.add(item);
-        item = Inherit.create("三軒目" ,3 ,"３見目のデータです。");
+        item = Inherit.create("三軒目", 3, "３見目のデータです。");
         list.add(item);
 
         Base item1 = list.get(0);
@@ -30,11 +30,18 @@ public class IresureTest {
         Base item3 = list.get(2);
 
         // 取得した変数の型は親でも、メソッドは子…のはず！
-        assertThat(item1.getType() , is(100));
-        assertThat(item2.getType() , is(200));
-        assertThat(item3.getType() , is(300));
+        assertThat(item1.getType(), is(100));
+        assertThat(item2.getType(), is(200));
+        assertThat(item3.getType(), is(300));
 
-        
+        // 無論、小クラスに移し替えても、小クラスのメソッドが使える…はず！
+        Inherit childitem1 = (Inherit) item1;
+        Inherit childitem2 = (Inherit) item2;
+        Inherit childitem3 = (Inherit) item3;
+
+        assertThat(childitem1.getDescription(), is("一見目のデータです。"));
+        assertThat(childitem2.getDescription(), is("２見目のデータです。"));
+        assertThat(childitem3.getDescription(), is("３見目のデータです。"));
 
     }
 
