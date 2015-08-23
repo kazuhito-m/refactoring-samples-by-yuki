@@ -70,6 +70,10 @@ public class IresureTest {
         assertThat(base1.getType(), is(100));
         assertThat(base2.getType(), is(200));
         assertThat(base3.getType(), is(300));
+        assertThat(item1.getDescription(), is("一見目のデータです。"));
+        assertThat(item2.getDescription(), is("２見目のデータです。"));
+        assertThat(item3.getDescription(), is("３見目のデータです。"));
+
 
     }
 
