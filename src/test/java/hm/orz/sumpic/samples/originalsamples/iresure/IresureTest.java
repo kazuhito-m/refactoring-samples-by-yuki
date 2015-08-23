@@ -73,6 +73,7 @@ public class IresureTest {
         assertThat(item1.getDescription(), is("一見目のデータです。"));
         assertThat(item2.getDescription(), is("２見目のデータです。"));
         assertThat(item3.getDescription(), is("３見目のデータです。"));
+        // あれ？ここらへんで「何か上手くイカないことがあるはず」と思って始めたのだが…。
 
 
     }
