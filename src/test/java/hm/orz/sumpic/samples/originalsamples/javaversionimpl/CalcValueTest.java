@@ -22,5 +22,21 @@ public class CalcValueTest {
         assertThat(sut.calcValue(null, 2) , is(0));
     }
 
+    @Test
+    public void Java7以降のStringSwitch() {
+        assertThat(sut.calcValue7("a", 2) , is(3));
+        assertThat(sut.calcValue7("b", 2) , is(1));
+        assertThat(sut.calcValue7("c", 2) , is(0));
+        assertThat(sut.calcValue7(null, 2) , is(0));
+    }
+
+    @Test
+    public void Java8以降の関数型() {
+        assertThat(sut.calcValue8("a", 2) , is(3));
+        assertThat(sut.calcValue8("b", 2) , is(1));
+        assertThat(sut.calcValue8("c", 2) , is(0));
+        assertThat(sut.calcValue8(null, 2) , is(0));
+    }
+
 }
 
