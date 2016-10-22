@@ -1,5 +1,7 @@
 package com.github.kazuhito_m.samples.replacemagicnumberwithsymbolicconstant;
 
+import static com.github.kazuhito_m.samples.replacemagicnumberwithsymbolicconstant.Robot.Command.*;
+
 public class Main {
     public static void main(String[] args) {
         Robot robot = new Robot("Andrew");
