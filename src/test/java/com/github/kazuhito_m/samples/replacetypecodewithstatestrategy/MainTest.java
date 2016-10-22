@@ -8,6 +8,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 public class MainTest extends StandardOutputTest {
+
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(MainTest.class);
     }
