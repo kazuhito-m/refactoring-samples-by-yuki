@@ -18,7 +18,7 @@ public enum State {
 
         @Override
         public void log(String info) {
-            outlog(info);
+            output("Ignoring: " + info);
         }
     },
     LOGGING {
@@ -34,9 +34,10 @@ public enum State {
 
         @Override
         public void log(String info) {
-            outlog(info);
+            output("Logging: " + info);
         }
     };
+
 
     /**
      * ログを媒体いに出力する。
@@ -46,10 +47,6 @@ public enum State {
      */
     private static void output(String log) {
         System.out.println(log);
-    }
-
-    private static void outlog(String log) {
-        output("Ignoring: " + log);
     }
 
     public abstract void start();
