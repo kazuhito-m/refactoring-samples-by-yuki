@@ -1,3 +1,7 @@
 language: java
 jdk:
   - oraclejdk8
+notifications:
+  slack:
+    rooms:
+      - k-and-m:m4DlbodkbaVqPpPPnzPzc9ls#ci-build
