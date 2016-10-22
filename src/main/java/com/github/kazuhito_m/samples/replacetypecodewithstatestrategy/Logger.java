@@ -14,14 +14,14 @@ public class Logger {
     public void start() {
         switch (_state) {
             case STATE_STOPPED:
-                System.out.println("** START LOGGING **");
+                output("** START LOGGING **");
                 _state = STATE_LOGGING;
                 break;
             case STATE_LOGGING:
             /* Do nothing */
                 break;
             default:
-                System.out.println("Invalid state: " + _state);
+                output("Invalid state: " + _state);
         }
     }
 
@@ -31,24 +31,35 @@ public class Logger {
             /* Do nothing */
                 break;
             case STATE_LOGGING:
-                System.out.println("** STOP LOGGING **");
+                output("** STOP LOGGING **");
                 _state = STATE_STOPPED;
                 break;
             default:
-                System.out.println("Invalid state: " + _state);
+                output("Invalid state: " + _state);
         }
     }
 
     public void log(String info) {
         switch (_state) {
             case STATE_STOPPED:
-                System.out.println("Ignoring: " + info);
+                output("Ignoring: " + info);
                 break;
             case STATE_LOGGING:
-                System.out.println("Logging: " + info);
+                output("Logging: " + info);
                 break;
             default:
-                System.out.println("Invalid state: " + _state);
+                output("Invalid state: " + _state);
         }
     }
+
+    /**
+     * ログを媒体いに出力する。
+     * ※標準出力以外に出したく成った時用に、とりあえずまとめとく。
+     *
+     * @param log メッセージ。
+     */
+    private void output(String log) {
+        System.out.println(log);
+    }
+
 }
