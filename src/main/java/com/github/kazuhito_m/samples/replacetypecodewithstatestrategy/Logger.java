@@ -8,39 +8,39 @@ public class Logger {
     private int _state;
 
     public Logger() {
-        _state = STATE_STOPPED;
+        setState(STATE_STOPPED);
     }
 
     public void start() {
-        switch (_state) {
+        switch (getState()) {
             case STATE_STOPPED:
                 output("** START LOGGING **");
-                _state = STATE_LOGGING;
+                setState(STATE_LOGGING);
                 break;
             case STATE_LOGGING:
             /* Do nothing */
                 break;
             default:
-                output("Invalid state: " + _state);
+                output("Invalid state: " + getState());
         }
     }
 
     public void stop() {
-        switch (_state) {
+        switch (getState()) {
             case STATE_STOPPED:
             /* Do nothing */
                 break;
             case STATE_LOGGING:
                 output("** STOP LOGGING **");
-                _state = STATE_STOPPED;
+                setState(STATE_STOPPED);
                 break;
             default:
-                output("Invalid state: " + _state);
+                output("Invalid state: " + getState());
         }
     }
 
     public void log(String info) {
-        switch (_state) {
+        switch (getState()) {
             case STATE_STOPPED:
                 output("Ignoring: " + info);
                 break;
@@ -48,7 +48,7 @@ public class Logger {
                 output("Logging: " + info);
                 break;
             default:
-                output("Invalid state: " + _state);
+                output("Invalid state: " + getState());
         }
     }
 
@@ -60,6 +60,14 @@ public class Logger {
      */
     private void output(String log) {
         System.out.println(log);
+    }
+
+    private int getState() {
+        return this._state;
+    }
+
+    private void setState(int state) {
+        this._state = state;
     }
 
 }
