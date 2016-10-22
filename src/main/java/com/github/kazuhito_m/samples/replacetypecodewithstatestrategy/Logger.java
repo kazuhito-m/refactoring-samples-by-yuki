@@ -1,13 +1,9 @@
 package com.github.kazuhito_m.samples.replacetypecodewithstatestrategy;
 
-import com.github.kazuhito_m.samples.replacetypecodewithstatestrategy.logstatus.State;
-import com.github.kazuhito_m.samples.replacetypecodewithstatestrategy.logstatus.StateLogging;
-import com.github.kazuhito_m.samples.replacetypecodewithstatestrategy.logstatus.StateStopped;
+import static com.github.kazuhito_m.samples.replacetypecodewithstatestrategy.State.STATE_LOGGING;
+import static com.github.kazuhito_m.samples.replacetypecodewithstatestrategy.State.STATE_STOPPED;
 
 public class Logger {
-
-    public static final int STATE_STOPPED = 0;
-    public static final int STATE_LOGGING = 1;
 
     private State _state;
 
@@ -68,21 +64,12 @@ public class Logger {
 
     // Setter/Getter (自己用)
 
-    private int getState() {
-        return this._state.getTypeCode();
+    private State getState() {
+        return this._state;
     }
 
-    private void setState(int code) {
-        switch (code) {
-            case STATE_STOPPED:
-                _state = new StateStopped();
-                break;
-            case STATE_LOGGING:
-                _state = new StateLogging();
-                break;
-            default:
-                output("Invalid state: " + getState());
-        }
+    private void setState(State state) {
+        this._state = state;
     }
 
 }
