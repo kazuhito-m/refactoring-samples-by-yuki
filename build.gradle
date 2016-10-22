@@ -1,0 +1,26 @@
+apply plugin: 'war'
+apply plugin: 'jacoco'
+
+apply plugin: 'idea'
+
+group = 'com.github.kazuhito_m'
+version = '0.0.1-SNAPSHOT'
+description = "refactoring-samples-by-yuki"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit-dep:4.11'
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
+}
