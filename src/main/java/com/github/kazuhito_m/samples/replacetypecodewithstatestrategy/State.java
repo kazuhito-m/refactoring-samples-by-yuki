@@ -5,7 +5,7 @@ package com.github.kazuhito_m.samples.replacetypecodewithstatestrategy;
  */
 public enum State {
 
-    STATE_STOPPED {
+    STOPPED {
         @Override
         public void start() {
             output("** START LOGGING **");
@@ -18,10 +18,10 @@ public enum State {
 
         @Override
         public void log(String info) {
-            output("Ignoring: " + info);
+            outlog(info);
         }
     },
-    STATE_LOGGING {
+    LOGGING {
         @Override
         public void start() {
             /* Do nothing */
@@ -34,10 +34,9 @@ public enum State {
 
         @Override
         public void log(String info) {
-            output("Logging: " + info);
+            outlog(info);
         }
     };
-
 
     /**
      * ログを媒体いに出力する。
@@ -47,6 +46,10 @@ public enum State {
      */
     private static void output(String log) {
         System.out.println(log);
+    }
+
+    private static void outlog(String log) {
+        output("Ignoring: " + log);
     }
 
     public abstract void start();
