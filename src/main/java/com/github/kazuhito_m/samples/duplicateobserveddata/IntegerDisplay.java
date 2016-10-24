@@ -1,9 +1,13 @@
 package com.github.kazuhito_m.samples.duplicateobserveddata;
 
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class IntegerDisplay extends Frame implements ActionListener {
+
     private final Label _octalLabel = new Label("0");
     private final Label _decimalLabel = new Label("0");
     private final Label _hexadecimalLabel = new Label("0");
