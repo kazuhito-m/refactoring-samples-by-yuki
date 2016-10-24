@@ -14,7 +14,7 @@ public class IntegerDisplay extends Frame implements ActionListener {
     private final Button _incrementButton = new Button("+");
     private final Button _decrementButton = new Button("-");
 
-    private int _value = 0;
+    private Value _value = new Value(0);
 
     public IntegerDisplay() {
         super("IntegerDisplay");
@@ -51,9 +51,9 @@ public class IntegerDisplay extends Frame implements ActionListener {
      */
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == _incrementButton) {
-            setValue(_value + 1);
+            setValue(getValue() + 1);
         } else if (e.getSource() == _decrementButton) {
-            setValue(_value - 1);
+            setValue(getValue() - 1);
         }
     }
 
@@ -63,7 +63,7 @@ public class IntegerDisplay extends Frame implements ActionListener {
      * @return 内部数値。
      */
     public int getValue() {
-        return _value;
+        return _value.getValue();
     }
 
     /**
@@ -72,9 +72,10 @@ public class IntegerDisplay extends Frame implements ActionListener {
      * @param value セットしたい数値。
      */
     public void setValue(int value) {
-        _value = value;
-        _octalLabel.setText(Integer.toString(_value, 8));
-        _decimalLabel.setText(Integer.toString(_value, 10));
-        _hexadecimalLabel.setText(Integer.toString(_value, 16));
+        _value.setValue(value);
+        int v = _value.getValue();
+        _octalLabel.setText(Integer.toString(v, 8));
+        _decimalLabel.setText(Integer.toString(v, 10));
+        _hexadecimalLabel.setText(Integer.toString(v, 16));
     }
 }
