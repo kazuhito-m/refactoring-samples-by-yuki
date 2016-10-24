@@ -21,6 +21,7 @@ allprojects {
 }
 
 dependencies {
+    compile 'org.projectlombok:lombok:1.16.8'
     testCompile 'junit:junit-dep:4.11'
     testCompile 'org.hamcrest:hamcrest-library:1.3'
 }
