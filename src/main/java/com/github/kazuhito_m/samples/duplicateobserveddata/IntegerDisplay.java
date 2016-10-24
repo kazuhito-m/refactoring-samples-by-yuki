@@ -19,6 +19,7 @@ public class IntegerDisplay extends Frame implements ActionListener {
     public IntegerDisplay() {
         super("IntegerDisplay");
 
+        // 表示物を自身に追加。
         setLayout(new GridLayout(4, 2));
         add(new Label("Octal:"));
         add(_octalLabel);
@@ -29,6 +30,7 @@ public class IntegerDisplay extends Frame implements ActionListener {
         add(_incrementButton);
         add(_decrementButton);
 
+        // ボタンの押下イベントを拾うため、リスナーとして自身オブジェクトを登録。
         _incrementButton.addActionListener(this);
         _decrementButton.addActionListener(this);
 
@@ -42,6 +44,11 @@ public class IntegerDisplay extends Frame implements ActionListener {
         setVisible(true);
     }
 
+    /**
+     * ボタン押下時のイベント。
+     *
+     * @param e イベント。
+     */
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == _incrementButton) {
             setValue(_value + 1);
@@ -50,10 +57,20 @@ public class IntegerDisplay extends Frame implements ActionListener {
         }
     }
 
+    /**
+     * 外部から数値を取得する。
+     *
+     * @return 内部数値。
+     */
     public int getValue() {
         return _value;
     }
 
+    /**
+     * 数値を各ラベルにセットする。
+     *
+     * @param value セットしたい数値。
+     */
     public void setValue(int value) {
         _value = value;
         _octalLabel.setText(Integer.toString(_value, 8));
