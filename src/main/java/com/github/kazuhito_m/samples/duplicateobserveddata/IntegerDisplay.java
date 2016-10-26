@@ -1,5 +1,7 @@
 package com.github.kazuhito_m.samples.duplicateobserveddata;
 
+import lombok.experimental.Delegate;
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,6 +16,7 @@ public class IntegerDisplay extends Frame implements ActionListener, ValueListen
     private final Button _incrementButton = new Button("+");
     private final Button _decrementButton = new Button("-");
 
+    @Delegate
     private Value value = new Value(0);
 
     public IntegerDisplay() {
@@ -53,29 +56,11 @@ public class IntegerDisplay extends Frame implements ActionListener, ValueListen
      * @param e イベント。
      */
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == _incrementButton) {
-            setValue(getValue() + 1);
-        } else if (e.getSource() == _decrementButton) {
-            setValue(getValue() - 1);
+        if (e.getSource() instanceof Button) {
+            Button b = (Button) e.getSource();
+            int plusMinus1 = Integer.parseInt(b.getLabel() + "1");
+            this.value.add(plusMinus1);
         }
-    }
-
-    /**
-     * 外部から数値を取得する。
-     *
-     * @return 内部数値。
-     */
-    public int getValue() {
-        return value.getValue();
-    }
-
-    /**
-     * 数値を各ラベルにセットする。
-     *
-     * @param value セットしたい数値。
-     */
-    public void setValue(int value) {
-        this.value.setValue(value);
     }
 
     @Override

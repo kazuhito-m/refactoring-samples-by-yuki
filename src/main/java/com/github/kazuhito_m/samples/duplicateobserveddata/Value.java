@@ -31,4 +31,13 @@ public class Value {
             l.valueChanged(new ValueChangeEvent(this));
         }
     }
+
+    /**
+     * もとの値に加算する。
+     *
+     * @param count 加算値。
+     */
+    public void add(int count) {
+        setValue(getValue() + count);
+    }
 }
