@@ -5,6 +5,6 @@ package com.github.kazuhito_m.samples.duplicateobserveddata;
  */
 public interface ValueListener {
 
-    void ValueChanged(ValueChangeEvent e);
+    void valueChanged(ValueChangeEvent e);
 
 }
