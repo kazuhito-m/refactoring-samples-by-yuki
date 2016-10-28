@@ -12,20 +12,22 @@ public class RectangleGraph extends Graph {
         g.setColor(this.graphValue > 0 ? Color.BLUE : Color.RED);
         Rectangle bounds = getBounds();
 
-        int sign;
+        int x, y, w, h;
+
+        // 符号と加算率を計算。
+        int sign = +1;
         int minusWidthOn = 0;
-        if (graphValue > 0) {
-            sign = +1;
-            minusWidthOn = 0;
-        } else {
+        if (graphValue <= 0) {
             sign = -1;
             minusWidthOn = 1;
         }
-        int x, y, w, h;
+
+        // 座標を計算。
         w = (int) (bounds.width / 2 * (sign * graphValue) / 100.0);
         h = bounds.height / 2;
         x = bounds.width / 2 - (w * minusWidthOn);
         y = bounds.height / 4;
+
         g.fillRect(x, y, w, h);
     }
 

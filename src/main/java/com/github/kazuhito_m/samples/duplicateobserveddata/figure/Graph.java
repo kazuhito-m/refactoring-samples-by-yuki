@@ -10,8 +10,8 @@ import java.awt.*;
  */
 public class Graph extends Canvas implements ValueListener {
 
-    private static final int RECTANGLE = 0;
-    private static final int CIRCLE = 1;
+    public static final int RECTANGLE = 0;
+    public static final int CIRCLE = 1;
 
     protected int graphValue;
 
