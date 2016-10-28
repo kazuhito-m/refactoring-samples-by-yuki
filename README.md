@@ -12,8 +12,8 @@ Refactoring Samples by Hiroshi Yuki
 
 ## Latest integration
 
-+ master : [![Build Status](https://secure.travis-ci.org/kazuhito-m/refactoring-samples-by-yuki.png)](http://travis-ci.org/kazuhito-m/refactoring-samples-by-yuki)
-
++ master : [![Build Status](https://secure.travis-ci.org/kazuhito-m/refactoring-samples-by-yuki.png)](http://travis-ci.org/kazuhito-m/refactoring-samples-by-yuki) by Travis CI
++ master : [![Build Status](https://drone.io/github.com/kazuhito-m/refactoring-samples-by-yuki/status.png)](https://drone.io/github.com/kazuhito-m/refactoring-samples-by-yuki/latest) by Drone IO
 
 ## Author
 
