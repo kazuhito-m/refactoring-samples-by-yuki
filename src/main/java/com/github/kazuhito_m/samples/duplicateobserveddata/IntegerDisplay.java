@@ -1,5 +1,8 @@
 package com.github.kazuhito_m.samples.duplicateobserveddata;
 
+import com.github.kazuhito_m.samples.duplicateobserveddata.value.Value;
+import com.github.kazuhito_m.samples.duplicateobserveddata.value.ValueChangeEvent;
+import com.github.kazuhito_m.samples.duplicateobserveddata.value.ValueListener;
 import lombok.experimental.Delegate;
 
 import java.awt.*;

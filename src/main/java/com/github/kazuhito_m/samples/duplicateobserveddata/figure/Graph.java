@@ -1,4 +1,7 @@
-package com.github.kazuhito_m.samples.duplicateobserveddata;
+package com.github.kazuhito_m.samples.duplicateobserveddata.figure;
+
+import com.github.kazuhito_m.samples.duplicateobserveddata.value.ValueChangeEvent;
+import com.github.kazuhito_m.samples.duplicateobserveddata.value.ValueListener;
 
 import java.awt.*;
 

@@ -1,4 +1,4 @@
-package com.github.kazuhito_m.samples.duplicateobserveddata;
+package com.github.kazuhito_m.samples.duplicateobserveddata.value;
 
 /**
  * 通知を行うインターフェイス。
