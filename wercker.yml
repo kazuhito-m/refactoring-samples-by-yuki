@@ -1,4 +1,4 @@
-box: java
+box: java8-oracle
 build:
     steps:
         - script
