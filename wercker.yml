@@ -1,7 +1,7 @@
-box: java8-oracle
+box: java
 build:
     steps:
-        - script
+        - script:
             name: gradle test
             code: ./gradlew clean test
     after-steps:
