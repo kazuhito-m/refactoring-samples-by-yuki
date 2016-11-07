@@ -23,5 +23,5 @@ public class MainTest extends StandardOutputTest {
         String actual = getActualOutput();
         assertThat(actual, is(expected));
     }
-    
+
 }

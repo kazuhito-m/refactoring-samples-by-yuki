@@ -1,14 +1,15 @@
 package com.github.kazuhito_m.samples.replaceInheritancewithdelegation;
 
 public class Main {
+
     public static void main(String[] args) {
         Dice dice0 = new Dice();
         Dice dice1 = new Dice(456L);
         Dice dice2 = new Dice();
         Dice[] dices = {
-            dice0,
-            dice1,
-            dice2,
+                dice0,
+                dice1,
+                dice2,
         };
 
         dice2.setSeed(456L);
@@ -20,4 +21,5 @@ public class Main {
             System.out.println();
         }
     }
+
 }
