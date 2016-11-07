@@ -11,7 +11,8 @@ public class Dice {
     }
 
     public Dice(long seed) {
-        this.random = new Random(seed);
+        this();
+        this.setSeed(seed);
     }
 
     public int nextInt() {
