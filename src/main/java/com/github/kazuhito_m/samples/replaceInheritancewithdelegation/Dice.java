@@ -7,12 +7,11 @@ public class Dice {
     private final Random random;
 
     public Dice() {
-        this.random = new Random(314159L);
+        this(314159L);
     }
 
     public Dice(long seed) {
-        this();
-        this.setSeed(seed);
+        this.random = new Random(seed);
     }
 
     public int nextInt() {
