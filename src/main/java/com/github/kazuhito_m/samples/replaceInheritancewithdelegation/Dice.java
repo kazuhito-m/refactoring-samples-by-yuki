@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Dice {
 
-    private Random random;
+    private final Random random;
 
     public Dice() {
         this.random = new Random(314159L);
@@ -19,7 +19,7 @@ public class Dice {
     }
 
     public void setSeed(long seed) {
-        this.random = new Random(seed);
+        this.random.setSeed(seed);
     }
 
 }
