@@ -1,6 +1,7 @@
 package com.github.kazuhito_m.samples.introduceassertion;
 
 public class SortSample {
+
     private final int[] _data;
 
     public SortSample(int[] data) {
@@ -16,11 +17,11 @@ public class SortSample {
                     m = y;
                 }
             }
-            // ������_data[m]��_data[x]�`_data[_data.length - 1]�̍ŏ��l�̂͂�
+            // ここで _data[m] は _data[x] 〜 _data[_data.length - 1] の最小値のはず
             int v = _data[m];
             _data[m] = _data[x];
             _data[x] = v;
-            // ������_data[0]�`_data[x + 1]�̓\�[�g�ς݂̂͂�
+            // ここで _data[0] 〜 _data[x + 1] はソート済みのはず
         }
     }
 
@@ -34,4 +35,5 @@ public class SortSample {
         buffer.append("]");
         return buffer.toString();
     }
+
 }

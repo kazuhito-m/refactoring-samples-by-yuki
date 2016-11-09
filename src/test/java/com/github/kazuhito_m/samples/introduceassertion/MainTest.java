@@ -7,6 +7,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 public class MainTest {
+
     public static junit.framework.Test suite() {
         return new JUnit4TestAdapter(MainTest.class);
     }
@@ -37,4 +38,5 @@ public class MainTest {
         String expected = "[ 0, 0, 3, 3, 3, 7, 7, 8, 9, 9, ]";
         assertThat(actual, is(expected));
     }
+    
 }
