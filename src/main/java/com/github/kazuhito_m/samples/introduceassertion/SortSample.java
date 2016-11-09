@@ -17,11 +17,15 @@ public class SortSample {
                     m = y;
                 }
             }
-            // ここで _data[m] は _data[x] 〜 _data[_data.length - 1] の最小値のはず
+
+            assert isMin(m, x, _data.length - 1);
+
             int v = _data[m];
             _data[m] = _data[x];
             _data[x] = v;
-            // ここで _data[0] 〜 _data[x + 1] はソート済みのはず
+
+            assert isSorted(0, x + 1);
+
         }
     }
 
@@ -34,6 +38,42 @@ public class SortSample {
         }
         buffer.append("]");
         return buffer.toString();
+    }
+
+    // ユティリティメソッド。
+
+    /**
+     * 添字がposの要素の値が、添字がstart以上end以下の要素の最小値ならtrueを返すメソッド。
+     *
+     * @param pos   現在位置。
+     * @param start 開始位置。
+     * @param end   終了位置。
+     * @return false:最小値でない(異常)。
+     */
+    private boolean isMin(int pos, int start, int end) {
+        int nowValue = _data[pos];
+        for (int i = start; i <= end; i++) {
+            if (nowValue > _data[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * 添字がstart以上end以下の範囲がソートされているならtrueを返すメソッド。
+     *
+     * @param start 開始位置。
+     * @param end   終了位置。
+     * @return false:ソートされていない(異常)。
+     */
+    private boolean isSorted(int start, int end) {
+        for (int i = start; i < end; i++) {
+            if (_data[i] > _data[i + 1]) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
