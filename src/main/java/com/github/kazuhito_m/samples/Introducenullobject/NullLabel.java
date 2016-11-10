@@ -14,10 +14,11 @@ public class NullLabel extends Label {
         // なにもしない
     }
 
-    @Override
-    public boolean isNull() {
-        return true;
-    }
+    // 教科書とはことなるが、コレももう使わないなら要らないと思う。
+//    @Override
+//    public boolean isNull() {
+//        return true;
+//    }
 
 }
 

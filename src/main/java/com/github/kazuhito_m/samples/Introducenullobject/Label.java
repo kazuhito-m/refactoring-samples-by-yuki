@@ -15,8 +15,10 @@ public class Label {
         return "\"" + _label + "\"";
     }
 
-    public boolean isNull() {
-        return false;
-    }
+    // 教科書とはことなるが、コレももう使わないなら要らないと思う。
+//    public boolean isNull() {
+//        return false;
+//    }
+
 }
 
