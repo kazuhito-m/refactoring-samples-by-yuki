@@ -5,7 +5,7 @@ package com.github.kazuhito_m.samples.Introducenullobject;
  */
 public class NullLabel extends Label {
 
-    public NullLabel() {
+    protected NullLabel() {
         super("(none)");
     }
 

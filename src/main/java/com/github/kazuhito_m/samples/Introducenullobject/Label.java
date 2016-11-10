@@ -1,6 +1,12 @@
 package com.github.kazuhito_m.samples.Introducenullobject;
 
 public class Label {
+
+    /**
+     * "null"をあらわす定数。
+     */
+    public static final Label NULL = new NullLabel();
+
     private final String _label;
 
     public Label(String label) {

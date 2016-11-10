@@ -11,7 +11,7 @@ public class Person {
     }
 
     public Person(Label name) {
-        this(name, new NullLabel());
+        this(name, Label.NULL);
     }
 
     public void display() {
