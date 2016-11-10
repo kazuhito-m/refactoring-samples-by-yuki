@@ -15,12 +15,8 @@ public class Person {
     }
 
     public void display() {
-        if (!_name.isNull()) {
-            _name.display();
-        }
-        if (!_name.isNull()) {
-            _mail.display();
-        }
+        _name.display();
+        _mail.display();
     }
 
     public String toString() {
