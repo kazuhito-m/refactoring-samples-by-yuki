@@ -24,11 +24,7 @@ public class Person {
     }
 
     public String toString() {
-        String result = "[ Person:";
-        result += " name=" + _name;
-        result += " mail=" + _mail;
-        result += " ]";
-        return result;
+        return String.format("[ Person: name=%s mail=%s ]", _name, _mail);
     }
 
 }
