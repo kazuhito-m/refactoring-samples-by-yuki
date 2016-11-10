@@ -25,23 +25,9 @@ public class Person {
 
     public String toString() {
         String result = "[ Person:";
-
-        result += " name=";
-        if (!_name.isNull()) {
-            result += "\"(none)\"";
-        } else {
-            result += _name;
-        }
-
-        result += " mail=";
-        if (!_name.isNull()) {
-            result += "\"(none)\"";
-        } else {
-            result += _mail;
-        }
-
+        result += " name=" + _name;
+        result += " mail=" + _mail;
         result += " ]";
-
         return result;
     }
 
