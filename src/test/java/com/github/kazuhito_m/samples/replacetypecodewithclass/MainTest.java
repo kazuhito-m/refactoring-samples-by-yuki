@@ -19,9 +19,9 @@ public class MainTest extends StandardOutputTest {
     public void testMain() {
         Main.main(new String[0]);
         String expected = getExpectedOutput(
-                "book = [ 0, ���E�̗��j, 4800 ]",
-                "dvd  = [ 1, �j���[���[�N�̖��E���ʔ�, 3000 ]",
-                "soft = [ 2, �`���[�����O�}�V���G�~�����[�^, 3200 ]");
+                "book = [ 0, 世界の歴史, 4800 ]",
+                "dvd  = [ 1, ニューヨークの夢・特別版, 3000 ]",
+                "soft = [ 2, チューリングマシンエミュレータ, 3200 ]");
         String actual = getActualOutput();
         assertThat(actual, is(expected));
     }
