@@ -1,23 +1,19 @@
 package com.github.kazuhito_m.samples.replacetypecodewithclass;
 
+import lombok.Getter;
+
 public class Item {
 
-    public static final int TYPECODE_BOOK = ItemType.BOOK.getTypeCode();
-    public static final int TYPECODE_DVD = ItemType.DVD.getTypeCode();
-    public static final int TYPECODE_SOFTWARE = ItemType.SOFTWARE.getTypeCode();
+    @Getter
+    private final ItemType type;
 
-    private final ItemType _typecode;
     private final String _title;
     private final int _price;
 
-    public Item(int typecode, String title, int price) {
-        _typecode = ItemType.getItemType(typecode);
+    public Item(ItemType type, String title, int price) {
+        this.type = type;
         _title = title;
         _price = price;
-    }
-
-    public int getTypecode() {
-        return _typecode.getTypeCode();
     }
 
     public String getTitle() {
@@ -30,7 +26,7 @@ public class Item {
 
     public String toString() {
         return "[ "
-                + getTypecode() + ", "
+                + getType().getTypeCode() + ", "
                 + getTitle() + ", "
                 + getPrice() + " ]";
     }
