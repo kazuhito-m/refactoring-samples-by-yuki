@@ -2,10 +2,6 @@ package com.github.kazuhito_m.samples.replacetypecodewithsubclasses;
 
 public abstract class Shape {
 
-    public static final int TYPECODE_LINE = 0;
-    public static final int TYPECODE_RECTANGLE = 1;
-    public static final int TYPECODE_OVAL = 2;
-
     private final int _startx;
     private final int _starty;
     private final int _endx;
@@ -24,20 +20,6 @@ public abstract class Shape {
 
     public abstract void draw();
 
-
-//    public int getTypecode() {
-//        return _typecode;
-//    }
-
-//    public String getName() {
-//        switch (_typecode) {
-//            case TYPECODE_OVAL:
-//                return "OVAL";
-//            default:
-//                return null;
-//        }
-//    }
-
     public String toString() {
         return "[ "
                 + getName() + ", "
@@ -45,18 +27,4 @@ public abstract class Shape {
                 + "(" + _endx + ", " + _endy + ") ]";
     }
 
-//    public void draw() {
-//        switch (_typecode) {
-//            case TYPECODE_OVAL:
-//                drawOval();
-//                break;
-//            default:
-//                ;
-//        }
-//    }
-
-    private void drawOval() {
-        System.out.println("drawOval: " + this.toString());
-        // ...
-    }
 }
