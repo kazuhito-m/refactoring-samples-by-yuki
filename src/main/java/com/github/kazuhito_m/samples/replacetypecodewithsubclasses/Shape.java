@@ -21,10 +21,7 @@ public abstract class Shape {
     public abstract void draw();
 
     public String toString() {
-        return "[ "
-                + getName() + ", "
-                + "(" + _startx + ", " + _starty + ")-"
-                + "(" + _endx + ", " + _endy + ") ]";
+        return String.format("[ %s, (%d, %d)-(%d, %d) ]", getName(), _startx, _starty, _endx, _endy);
     }
 
 }
