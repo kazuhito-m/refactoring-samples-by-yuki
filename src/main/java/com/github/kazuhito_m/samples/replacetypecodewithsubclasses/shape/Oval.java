@@ -15,11 +15,6 @@ public class Oval extends Shape {
     }
 
     @Override
-    public String getName() {
-        return "OVAL";
-    }
-
-    @Override
     public void draw() {
         System.out.println("drawOval: " + this.toString());
     }

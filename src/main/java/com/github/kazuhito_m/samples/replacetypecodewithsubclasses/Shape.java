@@ -16,7 +16,9 @@ public abstract class Shape {
 
     public abstract int getTypecode();
 
-    public abstract String getName();
+    public String getName() {
+        return this.getClass().getSimpleName().toUpperCase();
+    }
 
     public abstract void draw();
 

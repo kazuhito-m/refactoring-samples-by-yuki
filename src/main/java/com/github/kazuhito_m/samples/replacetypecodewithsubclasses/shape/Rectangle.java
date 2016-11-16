@@ -14,11 +14,6 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    public String getName() {
-        return "RECTANGLE";
-    }
-
-    @Override
     public void draw() {
         System.out.println("drawRectangle: " + this.toString());
     }

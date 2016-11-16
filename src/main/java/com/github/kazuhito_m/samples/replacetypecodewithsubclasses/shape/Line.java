@@ -14,11 +14,6 @@ public class Line extends Shape {
     }
 
     @Override
-    public String getName() {
-        return "LINE";
-    }
-
-    @Override
     public void draw() {
         System.out.println("drawLine: " + this.toString());
     }
