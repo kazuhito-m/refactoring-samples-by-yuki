@@ -1,6 +1,5 @@
 package com.github.kazuhito_m.samples.replacetypecodewithsubclasses;
 
-
 import com.github.kazuhito_m.samples.replacetypecodewithsubclasses.shape.Line;
 import com.github.kazuhito_m.samples.replacetypecodewithsubclasses.shape.Oval;
 import com.github.kazuhito_m.samples.replacetypecodewithsubclasses.shape.Rectangle;
