@@ -14,9 +14,4 @@ public class Oval extends Shape {
         return 2;
     }
 
-    @Override
-    public void draw() {
-        System.out.println("drawOval: " + this.toString());
-    }
-
 }

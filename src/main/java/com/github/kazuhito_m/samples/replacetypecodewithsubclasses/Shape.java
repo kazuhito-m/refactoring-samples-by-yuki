@@ -20,7 +20,10 @@ public abstract class Shape {
         return this.getClass().getSimpleName().toUpperCase();
     }
 
-    public abstract void draw();
+    public void draw() {
+        String name = this.getClass().getSimpleName();
+        System.out.println("draw" + name + ": " + this.toString());
+    }
 
     public String toString() {
         return String.format("[ %s, (%d, %d)-(%d, %d) ]", getName(), _startx, _starty, _endx, _endy);

@@ -13,9 +13,4 @@ public class Rectangle extends Shape {
         return 1;
     }
 
-    @Override
-    public void draw() {
-        System.out.println("drawRectangle: " + this.toString());
-    }
-
 }
